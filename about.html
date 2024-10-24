@@ -5,6 +5,42 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Rupsa Saha - About Me</title>
     <link href="styles.css" rel="stylesheet">
+    <!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        /* Ensures the image is responsive but doesn't take up full width */
+        .about-me-image {
+            width: 50%; /* Adjust this as needed (e.g., 50%, 60%, etc.) */
+            max-width: 300px; /* Ensures image doesn't get too large on big screens */
+            height: auto;
+            border: solid #CCC;
+            object-fit: contain;
+            display: block; /* Centers the image inside its container */
+            margin: 0 auto;
+        }
+
+        /* Flexbox container to make layout responsive */
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Optional: Adjust layout for smaller devices */
+        @media (max-width: 600px) {
+            .about-me-image {
+                width: 80%; /* Ensure it's not too small on mobile */
+            }
+            .flex-box {
+                width: 90%;
+            }
+            .paragraph-box {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
