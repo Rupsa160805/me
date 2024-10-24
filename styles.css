@@ -399,3 +399,74 @@ footer {
     visibility: visible;
     opacity: 1; /* Show tooltip on hover */
 }
+/* General Styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;  /* White text for contrast */
+    background: url(https://images.unsplash.com/photo-1589560486116-5a51b3340fe8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXw5Nzg5MjM0fHxlbnwwfHx8fHw%3D) no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Make sure the image covers the entire page */
+}
+
+/* Flexbox Layout for Navigation */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Use Flexbox for layout */
+    justify-content: center;  /* Center the buttons horizontally */
+    gap: 20px;  /* Space between buttons */
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;  /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    position: relative;
+    background-color: #ff0099;  /* Neon pink background */
+    box-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 20px #ff0099; /* Initial glow effect */
+}
+
+/* Neon Pink Glow Effect on Hover */
+header nav ul li a:hover {
+    color: #fff;
+    border-color: #ff0099;
+    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099;
+    background-color: #ff66b2;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
