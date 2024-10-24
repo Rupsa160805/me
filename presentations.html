@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Rupsa Saha - Presentations</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .poster-image {
+            display: none; /* Initially hide the poster image */
+            margin-top: 20px; /* Add some space above the image */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="/">
+        <img alt="Logo" class="logo" src="logo.jpg">
+    </a>
+    <h1>Rupsa Saha</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Educational Background</a>
+        <a href="experience.html">Experience and Skills</a>
+        <a href="publications.html">Paper/Patent Publications</a>
+        <a href="awards.html">Awards and Achievements</a>
+        <a href="projects.html">Projects</a>
+        <a href="membership.html">Membership</a>
+        <a href="research.html">Research Thrust Area</a>
+        <a href="events.html">List of Events</a>
+        <a href="presentations.html">Poster/Paper Presentations</a>
+        <a href="courses.html">Courses Completed</a>
+        <a href="contact.html">Contact Me</a>
+
+    </nav>
+</header>
+
+<main>
+    <section class="flex-container">
+        <div class="flex-box">
+            <h2>Poster/Paper Presentation</h2>
+            <p>Our dynamic team, comprising Rupsa Saha, Ranodip Ghosh, Parijat Pal, Rohan Kumar, and Karan Kr. Singh,
+                enthusiastically participated in a poster competition. We passionately explored the topic "The
+                Indispensable Role of AI in Preventing Sexually Transmitted Infections". Although we didn't clinch the
+                victory, the journey was incredibly enriching, enhancing our teamwork, collaboration, and research
+                skills, which are invaluable for our future endeavors.</p>
+
+            <button onclick="togglePoster()">Show Poster</button> <!-- Button to toggle poster visibility -->
+
+            <img alt="Poster Presentation" class="poster-image" id="poster" src="pst.jpg"> <!-- Poster image -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Rupsa Saha. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function togglePoster() {
+        const poster = document.getElementById('poster');
+        if (poster.style.display === 'none') {
+            poster.style.display = 'block'; // Show the poster
+        } else {
+            poster.style.display = 'none'; // Hide the poster
+        }
+    }
+</script>
+</body>
+</html>
